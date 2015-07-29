@@ -1,20 +1,22 @@
 \documentclass{ximera}%document class determines some formatting things, there are lots of these but lets keep it simple for now.%
 % also, this is a comment, by putting a percent sign in front you can write notes to yourself or any one else that may want to edit or learn from your creations%
-\title{Your title Here}%this is a reference for anytime LaTex wants to insert the title, like next to page numbers or on a title page.%
+\title{Introduction to LaTeX and Ximera}%this is a reference for anytime LaTex wants to insert the title, like next to page numbers or on a title page.%
 \begin{document}
 \begin{abstract}
-Abstracts help people know what your activity is, having one also helps Ximera stay organized.
+This activity is meant to familarize you with a very simple .tex document and how Ximera uses these. 
+%Abstracts help people know what your activity is, having one also helps Ximera stay organized.%
 \end{abstract}
 \maketitle %this is a command that tells LaTeX to plug in whatever you have put in for "`title"' above%
-This is where we put writing, like the directions or the introduction to what we are going to learn in your activity. You do not need any special commands. You can type mathematics using dollar signs like this
+To get the most out of this activity, open the source code in another window. You can do this by opening "edit source" at the top of this page in a new tab. 
+
+Here is some math, see in the source how we use dollar signs for "math mode"
  
 $2x^3=16$
 
-there are tools in TeXnic Center to help while you are figuring out how to type all the different symbols. You can also google almost any type of notation and chances are there is a simple way to put it in LaTeX. Try to type something relevant to what you teach.
+there are tools in many LaTeX editors to help while you are figuring out how to type all the different symbols, you can also google almost any type of notation and chances are there is a simple way to put it in LaTeX.
 
-Now lets put in some interactive things.
+Up to this point the activity is the same on paper handouts and online, that's boring so lets put in some interactive things.
 
-let's ask a question
 
 \begin{question} $6-3=$ 
 \begin{prompt}$\answer{3}$
@@ -22,7 +24,9 @@ let's ask a question
 \end{question}
 %we use the prompt command so that if we make paper handouts (by changing the document class to \documentclass[handout]{ximera}) the answer is left blank, in an interactive environment the answer will be a box students can write in and check their answers%
 
-let's ask a multiple choice question
+
+let's ask a multiple choice question, it's similar but a little different.
+
 \begin{question} which flavor is not a part of neopolitan?
 \begin{multipleChoice}
 \choice{strawberry}
@@ -31,4 +35,6 @@ let's ask a multiple choice question
 \choice{chocolate}
 \end{multipleChoice}
 \end{question}
+
+If all of this made sense, try forking this and messing with it to make an activity relevant to what you teach!
 \end{document}
