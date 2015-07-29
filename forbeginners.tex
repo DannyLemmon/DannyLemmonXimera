@@ -1,22 +1,25 @@
-\documentclass{ximera}
-\title{A Template for beginners}
+\documentclass{ximera}%document class determines some formatting things, there are lots of these but lets keep it simple for now.%
+% also, this is a comment, by putting a percent sign in front you can write notes to yourself or any one else that may want to edit or learn from your creations%
+\title{Your title Here}%this is a reference for anytime LaTex wants to insert the title, like next to page numbers or on a title page.%
 \begin{document}
 \begin{abstract}
+Abstracts help people know what your activity is, having one also helps Ximera stay organized.
 \end{abstract}
-\maketitle
-This is where we put writing. You can type mathematics using dollar signs like this
+\maketitle %this is a command that tells LaTeX to plug in whatever you have put in for "`title"' above%
+This is where we put writing, like the directions or the introduction to what we are going to learn in your activity. You do not need any special commands. You can type mathematics using dollar signs like this
  
 $2x^3=16$
 
-there are tools in TeXnic Center to help while you are figuring out how to type all the different symbols. Try to type something relevant to what you teach.
+there are tools in TeXnic Center to help while you are figuring out how to type all the different symbols. You can also google almost any type of notation and chances are there is a simple way to put it in LaTeX. Try to type something relevant to what you teach.
 
-another handy thing is the percent sign. Use this to designate a section as notes. anyhting with the percent sign in front of it will not show up in pdf handouts or in online ximera activities. try to put a secret message in your source code
-%write your secret message after a percent sign
-Now lets put in some interactive things
+Now lets put in some interactive things.
 
 let's ask a question
-\begin{question} $3-6=$ $\answer{3}$
+\begin{question} $6-3=$ 
+\begin{prompt}$\answer{3}$
+\end{prompt}
 \end{question}
+%we use the prompt command so that if we make paper handouts (by changing the document class to \documentclass[handout]{ximera}) the answer is left blank, in an interactive environment the answer will be a box students can write in and check their answers%
 
 let's ask a multiple choice question
 \begin{question} which flavor is not a part of neopolitan?
@@ -27,9 +30,4 @@ let's ask a multiple choice question
 \choice{chocolate}
 \end{multipleChoice}
 \end{question}
-%Now let's try a word choice:
-
-%\begin{question} Writing worksheets in LaTeX is\wordChoice[terrible,awful]{fun}!
-%\end{question}
-
 \end{document}
